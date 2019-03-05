@@ -1,0 +1,12 @@
+{
+    "version": 2,
+    "builds": [
+        {"src": "*.js", "use": "@now/node@canary"},
+        {"src": "routes/**/*.js", "use": "@now/node@canary"}
+    ],
+    "routes": [
+        {"src": "/api/about", "dest": "/routes/about/index.js"},
+        {"src": "/api/contact", "dest": "/routes/contact/index.js"},
+        {"src": "/api/proyect", "dest": "/routes/proyect/index.js"}
+    ]
+}
